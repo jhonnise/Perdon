@@ -1,0 +1,83 @@
+body {
+    font-family: Arial, sans-serif;
+    text-align: center;
+    background-color: #ffe6f0;
+    color: #000000;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    flex-direction: column;
+    position: relative;
+    padding: 15px;
+     background-image: url('imagenes/cora_sombra.jpeg'); /* Ahora la ruta es correcta */
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+h1 {
+    color: #ff69b4;
+    font-size: 2.5em;
+    margin-bottom: 20px;
+}
+
+h2 {
+    color: #ffffff;
+    font-size: 1.2em;
+    margin-bottom: 20px;
+    background-color: #000000;
+}
+
+.buttons-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+
+button {
+    padding: 10px 20px;
+    font-size: 16px;
+    border: none;
+    cursor: pointer;
+    border-radius: 8px;
+    transition: all 0.3s ease;
+}
+
+#siButton {
+    background-color: #ff66b3;
+    color: white;
+    font-size: 16px;
+    transition: font-size 0.5s ease, padding 0.5s ease, transform 0.5s ease;
+}
+
+#noButton {
+    background-color: #ff99cc;
+    color: #000000;
+    transition: all 0.3s ease;
+}
+
+#noButton.moving {
+    position: absolute;
+}
+
+#message {
+    color: rgb(0, 247, 255);
+    font-size: 20px;
+    margin-top: 10px;
+    text-transform: uppercase;
+    animation: fadeIn 1s ease forwards;
+}
+
+#peteMessage {
+    color: #ffffff;
+    margin-top: 10px;
+    background-color: #000000;
+    border-radius: 30%;
+}
+
+@keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+}
