@@ -12,9 +12,8 @@ body {
     position: relative;
     padding: 15px;
    background-image: url('paisajemirador.jpeg');
-background-size: contain;
-background-repeat: no-repeat;
-background-position: center;
+ background-size: 100%;
+    background-repeat: repeat;
 }
 
 h1 {
@@ -81,5 +80,6 @@ button {
     to { opacity: 1; }
 
 }
+
 
 
